@@ -7,6 +7,9 @@ module.exports = maxAge => {
 
   return function(req, res, next) {
     if(cacheUpdatedAt && Date.now() < cacheUpdatedAt + maxAge * 1000){
+      Object.keys(headers).forEach(key => {
+        res.setHeader(key, headers[key])
+      })
       res.writeHead(statusCode, statusMessage, headers)
       res.write(body)
       res.end()

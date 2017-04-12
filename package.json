@@ -1,6 +1,6 @@
 {
   "name": "express-response-cache",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,6 @@
   },
   "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/mainTao/express-response-cache",
   "dependencies": {}
 }
